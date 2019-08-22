@@ -7,3 +7,7 @@
 | 3 | Rose | Story | 100 | 2 | 1 |
 | 4 | Winners | GK | 150 | 1 | 0 |
 | 5 | Talent | GK | 200 | 4 | 1 |
+
+### List All Books
+select * from books;
+
