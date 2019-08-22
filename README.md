@@ -30,11 +30,15 @@ select Name,Price,Rating,Category from books order by Price DESC;
 
 ### Display Available Books 
 
-select * from books where Available_Status='Y'; group by category order by Name ASC;
+select * from books where Available_Status='Y' group by Category order by Name ASC;
 
 ### Display Available Books with category
 
-select * from books where Available_Status='Y' group by category order by Name ASC;
+select * from books where Available_Status='Y' group by Category order by Name ASC;
+
+### Display Books have low rating
+
+select * from books where category=? and Available_Status='Y' order by Rating DESC; 
 
 
 
