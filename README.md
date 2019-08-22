@@ -38,7 +38,7 @@ select * from books where Available_Status='Y' group by Category order by Name A
 
 ### Display Books have low rating
 
-select * from books where category=? and Available_Status='Y' order by Rating DESC; 
+select * from books where category=? and Available_Status='Y' group by rating having (rating)>=3; 
 
 
 
